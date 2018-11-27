@@ -1,0 +1,23 @@
+body {
+    font-size: 1em;
+    width:100%;
+    height: 100vh;
+}
+.content form {
+    display: grid;
+}
+.content form table {
+    margin:auto;
+}
+.main {
+    width:100%;
+    height:100vh;
+}
+h1 {
+    text-align:center;
+}
+.content form table table input {
+    
+    width:200px;
+    margin-right: 10px;
+}
