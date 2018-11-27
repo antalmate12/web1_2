@@ -37,6 +37,17 @@ function ellenoriz()
 		}
 	}
 
+	var kor = document.getElementById("kor");
+	if(kor) {
+		if(kor.value>120 || kor.value<18) {
+			rendben = false;
+			kor.style.background = '#f99';
+			fokusz = kor;
+		} else {
+			kor.style.background = '#9f9';
+		}
+	}
+
 	if (fokusz) {
 		fokusz.focus();
 	}
