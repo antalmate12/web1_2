@@ -9,6 +9,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 
+<link rel="stylesheet" href="style.css">
 
 	</head>
 	<body>
@@ -20,23 +21,23 @@
 	$re = '/^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/';
 	if(!isset($_POST['email']) || empty($_POST['jelszo']) || !preg_match($re,$_POST['email']))
 	{
-		echo "E-mail: ".$_POST['email']. " Hibás!<br>";
+		echo "<strong>E-mail</strong>: ".$_POST['email']. " <strong>Hibás</strong>!<br>";
         $tmpbool = false;
 	}
 	else
 	{
-		echo "E-mail: ".$_POST['email']. " Helyes!<br>";
+		echo "<strong>E-mail</strong>: ".$_POST['email']. " <strong>Helyes</strong>!<br>";
         $tmpbool = true;
 	}
 	
 	if(!isset($_POST['nev']) || empty($_POST['jelszo']) || strlen($_POST['nev']) < 8)
 	{
-		echo "Név: ".$_POST['nev']. " Hibás!<br>";
+		echo "<strong>Név</strong>: ".$_POST['nev']. " <strong>Hibás</strong>!<br>";
         $tmpbool = false;
 	}
 	else
 	{
-		echo "Név: ".$_POST['nev']. " Helyes!<br>";
+		echo "<strong>Név</strong>: ".$_POST['nev']. " <strong>Helyes</strong>!<br>";
 		$tmpbool = true;
 	}
 
@@ -44,23 +45,23 @@
 
 	if(!isset($_POST['jelszo']) || empty($_POST['jelszo']) || strlen($_POST['jelszo']) < 6 || strlen($_POST['jelszo']) > 12)
 	{
-		echo "Jelszó: ".$_POST['jelszo']." Hibás!<br>";
+		echo "<strong>Jelszó</strong>: ".$_POST['jelszo']." <strong>Hibás</strong>!<br>";
         $tmpbool = false;
 	}
 	else
 	{
-		echo "Jelszó: ".$_POST['jelszo']. " Helyes!<br>";
+		echo "<strong>Jelszó</strong>: ".$_POST['jelszo']. " <strong>Helyes</strong>!<br>";
         $tmpbool = true;
 	}
 
 	if(!isset($_POST['kor']) || empty($_POST['kor']) || $_POST['kor'] < 18 || $_POST['jelszo'] > 120)
 	{
-		echo "Kor: ".$_POST['kor']. " Hibás!<br>";
+		echo "<strong>Kor</strong>: ".$_POST['kor']. " <strong>Hibás</strong>!<br>";
 		$tmpbool = false;
 	}
 	else
 	{
-		echo "Kor: ".$_POST['kor']. " Helyes!<br>";
+		echo "<strong>Kor</strong>: ".$_POST['kor']. " <strong>Helyes</strong>!<br>";
 		$tmpbool = true;
 	}
     
@@ -69,7 +70,7 @@
         include("regisztracio.php");
 	}
 	else {
-		echo "<h1>Hibás adatok, nem regisztrálsz!</h1>";
+		echo "<h1><strong>Hibás</strong> adatok, nem regisztrálsz!</h1>";
 	}
 	
 ?>

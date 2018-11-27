@@ -47,9 +47,9 @@
                   <td><input id="kor" type="number" min="18" max=120 name="kor" size="20"  required></td>
                 </tr>
               </table>
-
-              <input class="btn btn-primary" id="kuld" onclick="ellenoriz();" type="submit" value="Küld">
-              <input class="btn btn-secondary" type="reset" value="C">
+<br>
+              <input class="btn btn-primary" id="kuld" onclick="ellenoriz();" type="submit" value="Küldés">
+              <input class="btn btn-secondary" type="reset" value="Törlés">
             </td>
             <td>
                 <img src="https://gamf.uni-neumann.hu/core/templates/pae_v2/gfx/pae-logo_hu.svg" alt="nje">
